@@ -36,19 +36,14 @@ pipeline {
             }
        }
        stage('Get ansible code') {
-           when {
-                expression {choice == '1'}
-            }
-          
+           
           steps{
              
                 git "https://github.com/harshbaghel52/exercise2.git"
           }
        }
        stage('execute ansible') {
-           when {
-                expression {choice == '2'}
-            }
+          
             
           steps{
              
