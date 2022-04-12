@@ -40,7 +40,7 @@ pipeline {
           
           steps{
              
-                git "https://github.com/harshbaghel52/exercise2.git"
+                git "https://github.com/harshbaghel52/ansible-multi-pipeline.git"
           }
        }
        stage('execute ansible') {
