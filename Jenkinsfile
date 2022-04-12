@@ -36,9 +36,7 @@ pipeline {
             }
        }
        stage('Get ansible code') {
-           when {
-                expression {choice == '1'}
-            }
+           
           
           steps{
              
@@ -46,10 +44,7 @@ pipeline {
           }
        }
        stage('execute ansible') {
-           when {
-                expression {choice == '2'}
-            }
-            
+         
           steps{
              
                 sshagent(['ansible-2']) {
