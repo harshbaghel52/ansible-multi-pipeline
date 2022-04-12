@@ -53,7 +53,7 @@ pipeline {
           steps{
              
                 sshagent(['ansible-2']) {
-                 ansiblePlaybook inventory:  'stage.inv',disableHostKeyChecking: true,  playbook: 'tomcat.yml'
+                 ansiblePlaybook inventory:  'prod.inv',disableHostKeyChecking: true,  playbook: 'tomcat.yml'
               }
 
           }
